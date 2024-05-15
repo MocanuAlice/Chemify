@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chemify"
         mc:Ignorable="d"
-        Title="LessonsMenu" Height="450" Width="800">
-    <Grid>
+        Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border>
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#462AD8" Offset="0"/>
+                <GradientStop Color="#DA34AE" Offset="0.75"/>
+                <GradientStop Color="#8A16C1" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="#060531" Offset="0"/>
+                <GradientStop Color="#1B1448" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200">
+                    
+                </ColumnDefinition>
+                <ColumnDefinition>
+                    
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75">
+                    
+                </RowDefinition>
+                <RowDefinition>
+                    
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Chemify"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20,0,0,0"/>
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Lectia 1"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="15"
+                             Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
+
+        </Grid>
         
-    </Grid>
+        
+
+
+    </Border>
 </Window>
