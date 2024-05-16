@@ -28,15 +28,25 @@ namespace Chemify
 
         private void signUpBtn_Click(object sender, RoutedEventArgs e)
         {
-            DataBaseHelper.Initialisation();
-            SqlCommand sqlCmd = new SqlCommand();
-            sqlCmd.Parameters.AddWithValue("@Username", nameBox.Text);
-            sqlCmd.Parameters.AddWithValue("@Email", emailBox.Text);
-            if (passBox.Password == confPassBox.Password)
+            string _connectionString = SQLDataAccess.GetConnectionString();
+            using (SqlConnection con = new SqlConnection(_connectionString))
             {
-                sqlCmd.Parameters.AddWithValue("@Password", passBox.Password);
+                con.Open();
+                string cmdText = "INSERT into UserData (Email, Username, Password) values (@Email, @Username, @Password)";
+                SqlCommand sqlCmd = new SqlCommand(cmdText, con);
+                sqlCmd.Parameters.AddWithValue("@Username", nameBox.Text);
+                sqlCmd.Parameters.AddWithValue("@Email", emailBox.Text);
+                if (passBox.Password == confPassBox.Password)
+                {
+                    sqlCmd.Parameters.AddWithValue("@Password", passBox.Password);
+                }
+                sqlCmd.ExecuteNonQuery();
+                signUp.Close();
+                LessonsMenu lessonsMenu = new LessonsMenu();
+                lessonsMenu.Show();
             }
-            sqlCmd.ExecuteNonQuery();
+            
+            
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,30 +29,47 @@ namespace Chemify
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            string mail, password;
-            mail=txtUser.Text;
-            password=txtPass.Password;
-            try
-            {
-                string querry = "SELECT* FROM User Data WHERE Email='" + txtUser.Text + "'AND password= '" + txtPass.Password + "'";
-                //SqlDataAdapter sda=new SqlDataAdapter(querry,);
-            }
-            catch
-            {
-                MessageBox.Show("Error");
-            }
-            finally
-            {
 
+            if(UserExist(txtUser.Text, txtPass.Password)) 
+            {
+                this.Close();
+                LessonsMenu lessonsMenu = new LessonsMenu();    
+                lessonsMenu.Show();
             }
-            
+            else
+            {
+                MessageBox.Show("Date incorecte!");
+               
+            }
 
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            signIn.Close();
             //Visibility = Visibility.Visible;
+        }
+        public bool UserExist(string email, string password)
+        {
+            string _connectionString = SQLDataAccess.GetConnectionString();
+            using (SqlConnection con=new SqlConnection(_connectionString))
+            {
+                con.Open();
+                string cmdText = "Select Email,Password from UserData where Email=@email and Password=password";
+                using(SqlCommand cmd=new SqlCommand(cmdText, con))
+                {
+                    cmd.Parameters.AddWithValue("Email",email);
+                    cmd.Parameters.AddWithValue("Password",password);
+                    using(SqlDataReader reader=cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
         }
     }
 }
