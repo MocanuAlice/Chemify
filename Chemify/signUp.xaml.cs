@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Chemify.DataAccess;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,12 +28,20 @@ namespace Chemify
 
         private void signUpBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DataBaseHelper.Initialisation();
+            SqlCommand sqlCmd = new SqlCommand();
+            sqlCmd.Parameters.AddWithValue("@Username", nameBox.Text);
+            sqlCmd.Parameters.AddWithValue("@Email", emailBox.Text);
+            if (passBox.Password == confPassBox.Password)
+            {
+                sqlCmd.Parameters.AddWithValue("@Password", passBox.Password);
+            }
+            sqlCmd.ExecuteNonQuery();
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Chemify.DataAccess;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +28,23 @@ namespace Chemify
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            string mail, password;
+            mail=txtUser.Text;
+            password=txtPass.Password;
+            try
+            {
+                string querry = "SELECT* FROM User Data WHERE Email='" + txtUser.Text + "'AND password= '" + txtPass.Password + "'";
+                //SqlDataAdapter sda=new SqlDataAdapter(querry,);
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+            finally
+            {
+
+            }
+            
 
         }
 

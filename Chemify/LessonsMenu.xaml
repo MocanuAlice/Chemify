@@ -54,7 +54,15 @@
                              Foreground="White"
                              FontSize="15"
                              Style="{StaticResource MenuButtonTheme}"/>
+                
+
+
             </StackPanel>
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10">
+                
+            </ContentControl>
 
         </Grid>
         
