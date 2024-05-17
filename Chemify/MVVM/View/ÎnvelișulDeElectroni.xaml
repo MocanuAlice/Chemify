@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="Chemify.MVVM.View.Înveli_ulDeElectroni"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chemify.MVVM.View"
+             mc:Ignorable="d" d:DesignWidth="800" FontSize="24" Height="1250">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Învelișul de electroni"
+                   Foreground="White"
+                   FontSize="36"
+                   HorizontalAlignment="left"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="700"
+                    Height="150"
+                    Background="Gray"
+                        Margin="0,20,0,0">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="   Totalitatea electronilor ce gravitează în jurul nucleului formează învelișul de electroni."
+                                   TextWrapping="Wrap"
+                                   Margin="10,10,20,0"/>
+                            <TextBlock Text="   În învelișul de electroni, electronii sunt aranjați ordonat pe: straturi, substraturi și orbitali."
+       TextWrapping="Wrap"
+       Margin="10,10,20,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                <Border Width="700"
+             Height="430"
+             Background="Gray">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10"
+                                Rect="0,0,700,430"/>
+                    </Border.Clip>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="       Orbitalul = zona de suprapunere maximă în care se găsește electronul în mișcarea sa în jurul nucleului."
+                            TextWrapping="Wrap" Margin="10,0,0,0"
+                            />
+                            <TextBlock Text="     Mișcarea electronului în jurul propriei axe = mișcare de spin. Pe un orbital există maxim 2 e⁻ cu mișcări de spin opuse."
+           TextWrapping="Wrap"
+           Margin="10,0,10,0"/>
+                            <TextBlock Text="Există 4 tipuri de orbitali: s, p, d, f."
+                                       TextWrapping="Wrap"
+                                       Margin="40,5,0,0"/>
+                            <TextBlock Text="  1) Orbitalul de tip s: are formă sferică; există câte unul în fiecare substrat; are maxim 2e⁻."
+                                       TextWrapping="Wrap"
+                                       Margin="10,5,20,0"/>
+                            <TextBlock Text="  2) Orbitalii de tip p: au formă bilobară; există câte 3 în fiecare substrat; au maxim 6e⁻"
+                                       TextWrapping="Wrap"
+                                       Margin="10,0,20,0"/>
+                            <TextBlock Text="  3) Orbitalii de tip d: au forme complexe; sunt câte 5 în fiecare substrat; au maxim 10e⁻."
+                                       TextWrapping="Wrap"
+                                       Margin="10,0,0,0"/>
+                            <TextBlock Text="  4) Orbitalii de tip f: au forme complexe; sunt câte 7 în fiecare substrat; au maxim 14e⁻."
+           TextWrapping="Wrap"
+           Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                <Border Width="700"
+             Height="275"
+             Background="Gray">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10"
+                                Rect="0,0,700,275"/>
+                    </Border.Clip>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="    Substratul reprezintă totalitatea orbitalilor cu aceiași energie"
+                                   TextWrapping="Wrap"
+                                   Margin="10,10,20,0"/>
+                            <TextBlock Text="    În notația completă a unui substrat se ține cont de:"
+           TextWrapping="Wrap"
+           Margin="10,10,20,0"/>
+                            <TextBlock Text="- stratul din care face parte (cifra din față);"
+TextWrapping="Wrap"
+Margin="10,10,20,0"/>
+                            <TextBlock Text="- tipul de orbital (litera);"
+TextWrapping="Wrap"
+Margin="10,10,20,0"/>
+                            <TextBlock Text="- numărul de e⁻ (cifra din față);"
+TextWrapping="Wrap"
+Margin="10,10,20,0"/>
+                            <TextBlock Text="Notația substraturilor: 1s² sau 3p⁵"
+TextWrapping="Wrap"
+                                   TextAlignment="Center"
+Margin="10,20,20,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                <Border Width="700"
+            Height="265"
+            Background="Gray">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10"
+                               Rect="0,0,700,265"/>
+                    </Border.Clip>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="Straturi electronice"
+                                   FontWeight="Bold"
+                            TextWrapping="Wrap"
+                            Margin="10,10,10,0"/>
+                            <TextBlock Text="   -există 7 straturi electronice notate cu cifre de la 1 la 7 sau cu litere de la K la Q;"
+                                   TextWrapping="Wrap"
+                                   Margin="10,10,10,0"/>
+                            <TextBlock Text="   - straturile se diferențiază între ele prin numărul de substraturi, numărul de orbitali, numărul de e⁻ și energie;"
+           TextWrapping="Wrap"
+           Margin="10,0,0,0"/>
+                            <TextBlock Text="   - energia straturilor crește de la stratul K la Q;"
+TextWrapping="Wrap"
+Margin="10,0,0,0"/>
+                            <TextBlock Text="Numărul maxim de e⁻ de pe un strat este dat de relația 2n²."
+           TextWrapping="Wrap"
+           TextAlignment="Center"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
