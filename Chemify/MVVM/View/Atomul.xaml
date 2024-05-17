@@ -4,13 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Chemify.MVVM.View"
-             mc:Ignorable="d" d:DesignWidth="800" FontSize="20" Height="734">
+             mc:Ignorable="d" d:DesignWidth="800" FontSize="24" Height="1062">
     <StackPanel Margin="20,0,0,0">
         <TextBlock Text="Atomul"
                    Foreground="White"
-                   FontSize="28"
+                   FontSize="36"
                    HorizontalAlignment="left"/>
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Border Width="700"
                     Height="100"
                     Background="Gray">
@@ -27,13 +27,13 @@
                 </Grid>
             </Border>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
             <Border Width="700"
-             Height="205"
+             Height="240"
              Background="Gray">
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10" RadiusY="10"
-                                Rect="0,0,700,205"/>
+                                Rect="0,0,700,240"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
@@ -52,13 +52,13 @@
                 </Grid>
             </Border>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
             <Border Width="700"
-             Height="320"
+             Height="335"
              Background="Gray">
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10" RadiusY="10"
-                                Rect="0,0,700,320"/>
+                                Rect="0,0,700,335"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
@@ -83,6 +83,36 @@ Margin="10,20,20,0"/>
                 </Grid>
             </Border>
         </StackPanel>
-
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <Border Width="700"
+            Height="265"
+            Background="Gray">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10"
+                               Rect="0,0,700,265"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Izotopii"
+                                   FontWeight="Bold"
+                            TextWrapping="Wrap"
+                            Margin="10,10,10,0"/>
+                        <TextBlock Text="   Izotopii – sunt specii atomice ce au același număr atomic Z dar au numărul de masă A diferit (au numărul diferit de neutroni)."
+                                   TextWrapping="Wrap"
+                                   Margin="10,10,10,0"/>
+                        <TextBlock Text="Hidrogenul are 3 izotopi: ¹H, ²H, ³H."
+                                   TextAlignment="Center"
+           TextWrapping="Wrap"
+           Margin="0,10,0,0"/>
+                        <TextBlock Text="Oxigenul are 3 izotopi: ¹⁶O,¹⁷O,¹⁸O"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"/>
+                        <TextBlock Text="Clorul are 2 izotopi : ³⁵Cl ³⁷Cl."
+           TextWrapping="Wrap"
+           TextAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
     </StackPanel>
 </UserControl>
