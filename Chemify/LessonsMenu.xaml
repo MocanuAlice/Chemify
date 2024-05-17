@@ -4,12 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chemify"
+        xmlns:viewModel="clr-namespace:Chemify.MVVM.ViewModel"
         mc:Ignorable="d"
-        Height="450" Width="800"
+        Height="600" Width="950"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+       
+    </Window.DataContext>
+    
+    
     <Border>
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -27,7 +34,7 @@
         </Border.Background>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200">
+                <ColumnDefinition Width="150">
                     
                 </ColumnDefinition>
                 <ColumnDefinition>
@@ -35,7 +42,7 @@
                 </ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="75">
+                <RowDefinition Height="50">
                     
                 </RowDefinition>
                 <RowDefinition>
@@ -49,18 +56,28 @@
                        FontSize="22"
                        Margin="20,0,0,0"/>
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Lectia 1"
+                <RadioButton Content="Tabelul Periodic"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding PeriodicTableViewCommand}"
+                            />
+                <RadioButton Content="Atomul"
                              Height="50"
                              Foreground="White"
                              FontSize="15"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AtomulViewCommand}"/>
                 
 
 
             </StackPanel>
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10">
+                            Margin="10"
+                            Content="{Binding CurrentView}">
                 
             </ContentControl>
 

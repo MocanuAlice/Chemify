@@ -1,4 +1,5 @@
 ﻿using Chemify.DataAccess;
+using Chemify.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -29,12 +30,16 @@ namespace Chemify
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            
             if(UserExist(txtUser.Text, txtPass.Password)) 
             {
                 this.Close();
                 LessonsMenu lessonsMenu = new LessonsMenu();    
                 lessonsMenu.Show();
+                UserModel user = new UserModel()
+                {
+
+                };
             }
             else
             {
@@ -46,21 +51,25 @@ namespace Chemify
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
+            signIn signIn = new signIn();
             signIn.Close();
             //Visibility = Visibility.Visible;
         }
         public bool UserExist(string email, string password)
         {
+           
             string _connectionString = SQLDataAccess.GetConnectionString();
             using (SqlConnection con=new SqlConnection(_connectionString))
             {
                 con.Open();
-                string cmdText = "Select Email,Password from UserData where Email=@email and Password=password";
+
+                string cmdText = "Select Email, Password from UserData where Email=@email and Password=@password";
                 using(SqlCommand cmd=new SqlCommand(cmdText, con))
                 {
                     cmd.Parameters.AddWithValue("Email",email);
                     cmd.Parameters.AddWithValue("Password",password);
-                    using(SqlDataReader reader=cmd.ExecuteReader())
+                    
+                    using (SqlDataReader reader=cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {

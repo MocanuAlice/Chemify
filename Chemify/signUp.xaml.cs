@@ -41,7 +41,8 @@ namespace Chemify
                     sqlCmd.Parameters.AddWithValue("@Password", passBox.Password);
                 }
                 sqlCmd.ExecuteNonQuery();
-                signUp.Close();
+                signUp sign=new signUp();
+                sign.Close();
                 LessonsMenu lessonsMenu = new LessonsMenu();
                 lessonsMenu.Show();
             }

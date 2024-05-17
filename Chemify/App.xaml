@@ -11,6 +11,9 @@
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
+            <DataTemplate DataType="{x:Type viewModel:PeriodicTableViewModel}">
+                <view:TabelPeriodic/>
+            </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:Lectia1ViewModel}">
                 <view:Atomul/>
             </DataTemplate>
