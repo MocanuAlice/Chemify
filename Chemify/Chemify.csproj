@@ -9,20 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Images\**" />
-    <EmbeddedResource Remove="Images\**" />
-    <None Remove="Images\**" />
-    <Page Remove="Images\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="UserData.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MVVM\View\" />
+    <Folder Include="Images\" />
     <Folder Include="MVVM\Model\" />
   </ItemGroup>
 

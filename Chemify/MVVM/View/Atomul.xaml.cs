@@ -24,5 +24,7 @@ namespace Chemify.MVVM.View
         {
             InitializeComponent();
         }
+
+        
     }
 }

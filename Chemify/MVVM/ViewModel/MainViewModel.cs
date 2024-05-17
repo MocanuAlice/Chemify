@@ -12,8 +12,10 @@ namespace Chemify.MVVM.ViewModel
     {
         public RelayCommand PeriodicTableViewCommand {  get; set; }
         public RelayCommand AtomulViewCommand { get; set; }
+        public RelayCommand Quiz1ViewCommand { get; set; }
         public PeriodicTableViewModel periodicVM { get; set; }
         public Lectia1ViewModel lectia1VM{ get; set; }
+        public Quiz1ViewModel quiz1VM { get; set; }
 
         private object _currentView;
         public object CurrentView
@@ -29,6 +31,7 @@ namespace Chemify.MVVM.ViewModel
         {
             periodicVM = new PeriodicTableViewModel();
             lectia1VM = new Lectia1ViewModel();
+            quiz1VM = new Quiz1ViewModel();
 
             CurrentView = periodicVM;
 
@@ -39,6 +42,10 @@ namespace Chemify.MVVM.ViewModel
             AtomulViewCommand = new RelayCommand(o =>
             {
                 CurrentView = lectia1VM;
+            });
+            Quiz1ViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = quiz1VM;
             });
         }
     }

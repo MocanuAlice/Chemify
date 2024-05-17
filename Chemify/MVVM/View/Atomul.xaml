@@ -5,11 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Chemify.MVVM.View"
              mc:Ignorable="d" d:DesignWidth="800" FontSize="24" Height="1062">
-    <StackPanel Margin="20,0,0,0">
+
+    <StackPanel  Margin="20,0,0,0">
+
         <TextBlock Text="Atomul"
                    Foreground="White"
                    FontSize="36"
                    HorizontalAlignment="left"/>
+
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Border Width="700"
                     Height="100"
@@ -41,6 +44,7 @@
                                    FontWeight="Bold"
                             TextWrapping="Wrap"
                             Margin="10,10,20,0"/>
+                        
                         <TextBlock Text="     1) nucleu - partea centrală,care conține două tipuri de particule: protoni( p+) - particule cu sarcina pozitivă și neutroni (n0) - particule fără sarcina electrică. "
                                    TextWrapping="Wrap"
                                    Margin="10,10,20,0"/>
@@ -114,5 +118,10 @@ Margin="10,20,20,0"/>
                 </Grid>
             </Border>
         </StackPanel>
+
+
+
     </StackPanel>
+
+
 </UserControl>
