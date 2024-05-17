@@ -17,7 +17,7 @@
             <StackPanel Orientation="Horizontal"
                 Width="600"
                 Height="200"
-                Background="Gray">
+                Background="#FF719FDC">
 
 
             </StackPanel>
