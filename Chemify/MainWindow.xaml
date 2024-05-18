@@ -11,9 +11,12 @@
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         AllowsTransparency="True">
-    <Border>
+    <Border CornerRadius="12">
+        <Border.Background>
+            <ImageBrush ImageSource="Images/LabEquipment.jpg"/>
+        </Border.Background>
 
-        <Border CornerRadius="10" BorderThickness="2" Opacity="0.95">
+            <Border CornerRadius="10" BorderThickness="2" Opacity="0.95">
 
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -32,39 +35,45 @@
 
             <Grid>
                 <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="300"/>
-                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="330"/>
+                        <ColumnDefinition Width="470"/>
                 </Grid.ColumnDefinitions>
 
-                <StackPanel ClipToBounds="True">
-                    <StackPanel.Background>
+                <Border CornerRadius="9,30,30,9">
+                    <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                             <GradientStop Color="#462AD8" Offset="0"/>
                             <GradientStop Color="#DA34AE" Offset="0.75"/>
                             <GradientStop Color="#8A16C1" Offset="1"/>
                         </LinearGradientBrush>
-                    </StackPanel.Background>
-                </StackPanel>
+                    </Border.Background>
+                    
+                    <StackPanel>
+                        <Image Source="Images/Logo.png"
+                               Width="200"
+                               Margin="0,90,0,0"/>
+                        
+                        <TextBlock Text="Chemify"
+                                   Foreground="White"
+                                   TextAlignment="Center"
+                                   FontSize="45"
+                                   FontWeight="ExtraBold"/>
 
-                <TextBlock Text="Chemify"
-                           Foreground="White"
-                           TextAlignment="Center"
-                           FontSize="40"
-                           FontWeight="ExtraBold"
-                           Margin="0,150,0,0"/>
-                <TextBlock Text="Creat de Ionescu Oana și Mocanu Alice"
-                           Foreground="GhostWhite"
-                           TextAlignment="Center"
-                           FontSize="16"
-                           FontWeight="DemiBold"
-                           VerticalAlignment="Bottom"
-                           Margin="0,10"/>
-
+                        <TextBlock Text="Creat de Ionescu Oana și Mocanu Alice"
+                                   Foreground="AntiqueWhite"
+                                   TextAlignment="Center"
+                                   FontSize="16"
+                                   FontWeight="DemiBold"
+                                   VerticalAlignment="Bottom"
+                                   Margin="0,120,0,0"/>
+                    </StackPanel>
+                </Border>
+                
                 <StackPanel Width="220"
-                    Grid.Column="1"
-                    Orientation="Vertical"
-                        HorizontalAlignment="Center"
-                    Margin="0,130,0,110">
+                            Grid.Column="1"
+                            Orientation="Vertical"
+                            HorizontalAlignment="Center"
+                            Margin="0,130,0,110">
 
                     <TextBlock Text="Ia primul pas spre cunoaștere"
                                Foreground="White"
@@ -74,13 +83,14 @@
                                TextAlignment="Center"/>
 
                     <Button x:Name="signUpBtn"                          
-                    BorderThickness="0"
-                    Content="CREEAZĂ CONT"
-                    Foreground="White"
-                    FontSize="12"
-                    FontFamily="Montserrat"
-                    Cursor="Hand"                           
-                    Margin="0,30,0,0"
+                            BorderThickness="0"
+                            Content="CREEAZĂ CONT"
+                            FontWeight="Bold"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="0,30,0,0"
                     Click="signUpBtn_Click">
 
                         <Button.Style>
@@ -97,24 +107,25 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Width="150" Height="40"
-                                CornerRadius="20"
-                                Background="{TemplateBinding Background}">
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
                                     <ContentPresenter VerticalAlignment="Center"
-                                              HorizontalAlignment="Center"/>
+                                                      HorizontalAlignment="Center"/>
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
                     <Button x:Name="signInBtn"                          
-                        BorderThickness="0"
-                        Content="CONECTARE"
-                        Foreground="White"
-                        FontSize="12"
-                        FontFamily="Montserrat"
-                        Cursor="Hand"                           
-                        Margin="0,20,0,0"
-                        Click="signInBtn_Click">
+                            BorderThickness="0"
+                            Content="CONECTARE"
+                            Foreground="White"
+                            FontWeight="Bold"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="0,20,0,0"
+                            Click="signInBtn_Click">
 
                         <Button.Style>
                             <Style TargetType="Button">
@@ -130,10 +141,9 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Width="150" Height="40"
-            CornerRadius="20"
-            Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                          HorizontalAlignment="Center"/>
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
