@@ -12,11 +12,8 @@
         Background="Transparent"
         AllowsTransparency="True">
     <Border CornerRadius="12">
-        <Border.Background>
-            <ImageBrush ImageSource="Images/LabEquipment.jpg"/>
-        </Border.Background>
 
-            <Border CornerRadius="10" BorderThickness="2" Opacity="0.95">
+        <Border CornerRadius="10" BorderThickness="2">
 
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -28,7 +25,7 @@
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#FF6461DF" Offset="0"/>
                     <GradientStop Color="#1B1448" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
@@ -49,7 +46,7 @@
                     </Border.Background>
                     
                     <StackPanel>
-                        <Image Source="Images/Logo.png"
+                        <Image Source="pack://application:,,,/Images/Logo.png"
                                Width="200"
                                Margin="0,90,0,0"/>
                         
@@ -65,7 +62,7 @@
                                    FontSize="16"
                                    FontWeight="DemiBold"
                                    VerticalAlignment="Bottom"
-                                   Margin="0,120,0,0"/>
+                                   Margin="0,115,0,0"/>
                     </StackPanel>
                 </Border>
                 
@@ -73,6 +70,7 @@
                             Grid.Column="1"
                             Orientation="Vertical"
                             HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
                             Margin="0,130,0,110">
 
                     <TextBlock Text="Ia primul pas spre cunoaștere"
