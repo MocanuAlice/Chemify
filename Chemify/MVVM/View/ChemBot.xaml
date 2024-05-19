@@ -37,7 +37,7 @@
                     Width="100" 
                     Click="SendButton_Click" 
                     Background="LightBlue" 
-                    Foreground="#FF030354"/>
+                    Foreground="#1B1448"/>
         </StackPanel>
     </Grid>
 </UserControl>

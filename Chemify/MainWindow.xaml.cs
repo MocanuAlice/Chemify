@@ -20,15 +20,8 @@ namespace Chemify
 
         private void signUpBtn_Click(object sender, RoutedEventArgs e)
         {
-            signUp w1 = new signUp();
-            w1.Show();
-            this.Hide();
-        }
-
-        private void signInBtn_Click(object sender, RoutedEventArgs e)
-        {
-            signIn w2 = new signIn();
-            w2.Show();
+            LessonsMenu window = new LessonsMenu();
+            window.Show();
             this.Hide();
         }
     }

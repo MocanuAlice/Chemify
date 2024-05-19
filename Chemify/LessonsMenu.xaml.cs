@@ -15,17 +15,16 @@ using System.Windows.Shapes;
 
 namespace Chemify
 {
-    /// <summary>
-    /// Interaction logic for LessonsMenu.xaml
-    /// </summary>
     public partial class LessonsMenu : Window
     {
-        
         public LessonsMenu()
         {
             InitializeComponent();
-            
         }
-        
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }    
 }

@@ -35,7 +35,7 @@ namespace Chemify.MVVM.View
                 string messageText = UserInput.Text.Trim();
                 UserInput.Clear();
 
-                AddMessageToChat("Tu: " + messageText, HorizontalAlignment.Right, "DarkBlue");
+                AddMessageToChat("Tu: " + messageText, HorizontalAlignment.Right, "LightBlue");
 
                 await ConnectWebSocketAsync(messageText);
             }
@@ -81,7 +81,7 @@ namespace Chemify.MVVM.View
                 var messageBlock = new TextBlock
                 {
                     Text = "ChemBot: ",
-                    Background = new SolidColorBrush(Colors.LightYellow),
+                    Background = new SolidColorBrush(Colors.Pink),
                     Margin = new Thickness(5),
                     Padding = new Thickness(10),
                     TextWrapping = TextWrapping.Wrap,

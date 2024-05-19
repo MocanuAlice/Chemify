@@ -80,9 +80,9 @@
                                TextWrapping="Wrap"
                                TextAlignment="Center"/>
 
-                    <Button x:Name="signUpBtn"                          
+                    <Button x:Name="startBtn"                          
                             BorderThickness="0"
-                            Content="CREEAZĂ CONT"
+                            Content="START"
                             FontWeight="Bold"
                             Foreground="White"
                             FontSize="12"
@@ -109,39 +109,6 @@
                                         Background="{TemplateBinding Background}">
                                     <ContentPresenter VerticalAlignment="Center"
                                                       HorizontalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
-
-                    <Button x:Name="signInBtn"                          
-                            BorderThickness="0"
-                            Content="CONECTARE"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="12"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"                           
-                            Margin="0,20,0,0"
-                            Click="signInBtn_Click">
-
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="#462AD8"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#28AEED"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Width="150" Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
