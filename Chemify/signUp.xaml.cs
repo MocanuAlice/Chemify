@@ -1,4 +1,4 @@
-﻿using Chemify.DataAccess;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -25,26 +25,11 @@ namespace Chemify
 
         private void signUpBtn_Click(object sender, RoutedEventArgs e)
         {
-            string _connectionString = SQLDataAccess.GetConnectionString();
-            using (SqlConnection con = new SqlConnection(_connectionString))
-            {
-                con.Open();
-                string cmdText = "INSERT into UserData (Email, Username, Password) values (@Email, @Username, @Password)";
-                SqlCommand sqlCmd = new SqlCommand(cmdText, con);
-                sqlCmd.Parameters.AddWithValue("@Username", nameBox.Text);
-                sqlCmd.Parameters.AddWithValue("@Email", emailBox.Text);
-                if (passBox.Password == confPassBox.Password)
-                {
-                    sqlCmd.Parameters.AddWithValue("@Password", passBox.Password);
-                }
-                sqlCmd.ExecuteNonQuery();
-                signUp sign=new signUp();
-                sign.Close();
-                LessonsMenu lessonsMenu = new LessonsMenu();
-                lessonsMenu.Show();
-            }
-            
-            
+            signUp sign = new signUp();
+            sign.Close();
+            LessonsMenu lessonsMenu = new LessonsMenu();
+            lessonsMenu.Show();
+
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

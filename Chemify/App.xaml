@@ -11,8 +11,8 @@
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <DataTemplate DataType="{x:Type viewModel:PeriodicTableViewModel}">
-                <view:TabelPeriodic/>
+            <DataTemplate DataType="{x:Type viewModel:ChemBotViewModel}">
+                <view:ChemBot/>
             </DataTemplate>
             
             <DataTemplate DataType="{x:Type viewModel:Lectia1ViewModel}">
@@ -25,6 +25,10 @@
 
             <DataTemplate DataType="{x:Type viewModel:InvelisulDeElectroniViewModel}">
                 <view:Înveli_ulDeElectroni/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:Quiz2ViewModel}">
+                <view:InvelisQuiz/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
