@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="Chemify.MVVM.View.AciziBaze"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chemify.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" FontSize="24" Height="1062" FontWeight="SemiBold">
+    <StackPanel Margin="20,0,0,0">
+
+        <TextBlock Text="Acizi"
+               FontWeight="DemiBold"
+               Foreground="White"
+               FontSize="36"
+               HorizontalAlignment="left"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Width="700"
+                Height="100"
+                Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,100"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="  Atomul este cea mai mică particulă dintr-o substanță care nu mai poate fi divizat prin procedee chimice obișnuite."
+                               TextWrapping="Wrap"
+                               Margin="10,15,20,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <Border Width="700"
+                Height="240"
+                Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,240"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Structura atomului:"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"
+                               Margin="10,10,20,0"/>
+
+                        <TextBlock Text="     1) nucleu - partea centrală,care conține două tipuri de particule: protoni( p⁺) - particule cu sarcina pozitivă și neutroni (n⁰) - particule fără sarcina electrică. "
+                               TextWrapping="Wrap"
+                               Margin="10,10,10,0"/>
+
+                        <TextBlock Text="     2) înveliș electronic-partea externă a atomului, care conține particule numite electroni(e⁻) - particule cu sarcină negativă. "
+                               TextWrapping="Wrap"
+                               Margin="10,10,10,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <Border Width="700"
+                Height="335"
+                Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,335"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Numărul atomic Z și numărul de masă A"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"
+                               Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    Un atom este caracterizat prin două numere:"
+                               TextWrapping="Wrap"
+                               Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    1) numărul atomic, notat cu Z care indică: numărul de protoni p+(sarcini pozitive) din nucleu; numărul de electroni e-(sarcini negative) din invelișul electronic ; numărul de ordine în Sistemul Periodic ( căsuța din sistemul periodic) "
+                               TextWrapping="Wrap"
+                               Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    2) numărul de masă, notat cu A, care arată suma dintre numărul de protoni și numărul de neutroni din nucleu. Este un număr întreg (natural)."
+                               TextWrapping="Wrap"
+                               Margin="10,10,20,0"/>
+
+                        <TextBlock Text="A = Z+N, N = numărul de neutroni"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Margin="10,20,20,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <Border Width="700"
+                Height="265"
+                Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,265"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Izotopii"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"
+                               Margin="10,10,10,0"/>
+
+                        <TextBlock Text="   Izotopii – sunt specii atomice ce au același număr atomic Z dar au numărul de masă A diferit (au numărul diferit de neutroni)."
+                               TextWrapping="Wrap"
+                               Margin="10,10,10,0"
+                               FontWeight="SemiBold"/>
+
+                        <TextBlock Text="Hidrogenul are 3 izotopi: ¹H, ²H, ³H."
+                               TextAlignment="Center"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+
+                        <TextBlock Text="Oxigenul are 3 izotopi: ¹⁶O,¹⁷O,¹⁸O"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"/>
+
+                        <TextBlock Text="Clorul are 2 izotopi : ³⁵Cl ³⁷Cl."
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
