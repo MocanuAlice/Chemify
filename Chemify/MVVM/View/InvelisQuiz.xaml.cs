@@ -18,14 +18,14 @@ namespace Chemify.MVVM.View
     /// <summary>
     /// Interaction logic for TPQuiz.xaml
     /// </summary>
-    public partial class AtomulQuiz : UserControl
+    public partial class InvelisQuiz : UserControl
     {
         List<int> questionNumbers = new List<int> { 1, 2, 3, 4, 5 };
         int qnb = 0;
         int i;
         int score;
 
-        public AtomulQuiz()
+        public InvelisQuiz()
         {
             InitializeComponent();
             StartGame();
@@ -71,57 +71,57 @@ namespace Chemify.MVVM.View
             foreach(var x in myCanvas.Children.OfType<Button>())
             {
                 x.Tag = "0";
-                x.Background = Brushes.Bisque;
+                x.Background = Brushes.MintCream;
             }
             
             switch(i)
             {
                 case 1:
 
-                    txtQuestion.Text = "Ce este un atom?";
-                    ans1.Content = "Cea mai mică particulă dintr-o substanță care poate fi divizată prin procedee chimice obișnuite.";
-                    ans2.Content = "Cea mai mică particulă dintr-o substanță care nu mai poate fi divizată prin procedee chimice obișnuite.";
-                    ans3.Content = "O particulă subatomică ce conține protoni și neutroni.";
+                    txtQuestion.Text = "Ce reprezintă învelișul de electroni?";
+                    ans1.Content = "Totalitatea protonilor din nucleul atomului.";
+                    ans2.Content = "Totalitatea electronilor care gravitează în jurul nucleului.";
+                    ans3.Content = "Totalitatea neutronilor din atom.";
                     ans2.Tag = "1";
 
                     break;
 
                 case 2:
 
-                    txtQuestion.Text = "Ce reprezintă numărul atomic (Z) al unui atom?";
-                    ans1.Content = "Numărul total de protoni și neutroni din nucleu.";
-                    ans2.Content = "Numărul de neutroni din nucleu.";
-                    ans3.Content = "Numărul de protoni din nucleu și numărul de electroni din învelișul electronic.";
-                    ans3.Tag = "1";
+                    txtQuestion.Text = "Cum sunt organizați electronii în învelișul de electroni?";
+                    ans1.Content = "Aleatoriu, fără o ordine specifică.";
+                    ans2.Content = "Pe straturi, substrauri și orbitali.";
+                    ans3.Content = "Doar pe straturi.";
+                    ans2.Tag = "1";
 
                     break;
 
                 case 3:
 
-                    txtQuestion.Text = "Ce indică numărul de masă (A) al unui atom?";
-                    ans1.Content = "Numărul de protoni din nucleu.";
-                    ans2.Content = "Numărul de electroni din învelișul electronic.";
-                    ans3.Content = "Suma dintre numărul de protoni și numărul de neutroni din nucleu.";
-                    ans3.Tag = "1";
+                    txtQuestion.Text = "Care sunt caracteristicile orbitalului de tip s?";
+                    ans1.Content = "Are o formă sferică și există câte unul în fiecare substrat.";
+                    ans2.Content = "Are o formă dublu-lobată și există câte trei în fiecare substrat.";
+                    ans3.Content = "Are o formă complexă și există câte cinci în fiecare substrat.";
+                    ans1.Tag = "1";
 
                     break;
 
                 case 4:
 
-                    txtQuestion.Text = "Ce sarcină electrică au protonii și electronii dintr-un atom?";
-                    ans1.Content = "Protonii au sarcină negativă, iar electronii au sarcină pozitivă.";
-                    ans2.Content = "Protonii au sarcină pozitivă, iar electronii au sarcină negativă.";
-                    ans3.Content = "Atât protonii, cât și electronii au sarcină neutru.";
+                    txtQuestion.Text = "Câți electroni poate găzdui un orbital de tip p?";
+                    ans1.Content = "2 electroni";
+                    ans2.Content = "6 electroni";
+                    ans3.Content = "10 electroni";
                     ans2.Tag = "1";
 
                     break;
 
                 case 5:
 
-                    txtQuestion.Text = "Unde se găsesc protonii și neutronii într-un atom?";
-                    ans1.Content = "În învelișul electronic.";
-                    ans2.Content = "În nucleul atomului.";
-                    ans3.Content = "În afara nucleului atomului.";
+                    txtQuestion.Text = "Care sunt caracteristicile orbitalilor de tip f?\r\n";
+                    ans1.Content = "Au forme sferice și există câte unu în fiecare substrat.";
+                    ans2.Content = "Au forme complexe și sunt câte 7 în fiecare substrat.";
+                    ans3.Content = "Au forme complexe și sunt câte 3 în fiecare substrat.";
                     ans2.Tag = "1";
 
                     break;
