@@ -10,13 +10,13 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        FontWeight="SemiBold"
+        FontSize="15">
     <Window.DataContext>
         <viewModel:MainViewModel/>
-       
     </Window.DataContext>
-    
-    
+ 
     <Border>
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -35,66 +35,69 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150">
-                    
+
                 </ColumnDefinition>
                 <ColumnDefinition>
-                    
+
                 </ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="50">
-                    
+
                 </RowDefinition>
                 <RowDefinition>
-                    
+
                 </RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="Chemify"
+                       FontWeight="Bold"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Foreground="White"
                        FontSize="22"
                        Margin="20,0,0,0"/>
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Tabelul Periodic"
+                <RadioButton Content="ChemBot"
                              Height="50"
                              Foreground="White"
-                             FontSize="14"
+                             FontSize="15"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
-                             Command="{Binding PeriodicTableViewCommand}"
-                            />
+                             Command="{Binding PeriodicTableViewCommand}"/>
+
+                <Border BorderBrush="White" BorderThickness="0,0,0,1">
+                    <TextBlock Text="Lecții"
+                               Foreground="White"
+                               Margin="8,5,0,5"
+                               FontSize="18"/>
+                </Border>
+
+
                 <RadioButton Content="Atomul"
                              Height="50"
                              Foreground="White"
-                             FontSize="15"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding AtomulViewCommand}"/>
-                <RadioButton Content="Atomul-Quiz"
+
+                <RadioButton Content="Atomul - Quiz"
                              Height="50"
                              Foreground="White"
-                             FontSize="15"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding Quiz1ViewCommand}"/>    
+                             Command="{Binding Quiz1ViewCommand}"/>
 
-
-
+                <RadioButton Content="Învelișul de electroni"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="13"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AtomulViewCommand}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
                             Margin="10"
-                            Content="{Binding CurrentView}"
-                            >
-                
-
+                            Content="{Binding CurrentView}">
             </ContentControl>
-
-
         </Grid>
-        
-        
-
-
     </Border>
 </Window>

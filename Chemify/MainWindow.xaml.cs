@@ -11,9 +11,6 @@ using System.Windows.Shapes;
 
 namespace Chemify
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -24,15 +21,15 @@ namespace Chemify
         private void signUpBtn_Click(object sender, RoutedEventArgs e)
         {
             signUp w1 = new signUp();
-            //Visibility = Visibility.Hidden;
             w1.Show();
+            this.Hide();
         }
 
         private void signInBtn_Click(object sender, RoutedEventArgs e)
         {
             signIn w2 = new signIn();
-            //Visibility = Visibility.Hidden;
             w2.Show();
+            this.Hide();
         }
     }
 }

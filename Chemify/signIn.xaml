@@ -108,7 +108,7 @@
                            TextAlignment="Center"
                            Margin="0,5,0,0"/>
 
-                    <TextBlock Text="Username"
+                    <TextBlock Text="Nume"
                            Foreground="DarkGray"
                            FontSize="12"
                            FontWeight="Medium"
@@ -134,7 +134,7 @@
                         </TextBox.Background>
                     </TextBox>
 
-                    <TextBlock Text="Password"
+                    <TextBlock Text="Parolă"
                            Foreground="DarkGray"
                            FontSize="12"
                            FontWeight="Medium"
@@ -162,7 +162,8 @@
 
                     <Button x:Name="btnLogin"                          
                         BorderThickness="0"
-                        Content="LOG IN"
+                        Content="CONECTARE"
+                            FontWeight="Bold"
                         Foreground="White"
                         FontSize="12"
                         FontFamily="Montserrat"

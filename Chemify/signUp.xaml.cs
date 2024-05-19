@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace Chemify
 {
-    /// <summary>
-    /// Interaction logic for signUp.xaml
-    /// </summary>
     public partial class signUp : Window
     {
         public signUp()
@@ -52,7 +49,8 @@ namespace Chemify
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            
+            Application.Current.MainWindow.Show();
+            this.Close();
         }
     }
 }

@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:Chemify"
         mc:Ignorable="d"
         Title="LoginView" Height="500" Width="800"
-WindowStyle="None"
-ResizeMode="NoResize"
-WindowStartupLocation="CenterScreen"
-Background="Transparent"
-AllowsTransparency="True">
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
     <Border CornerRadius="12">
 
         <Border CornerRadius="10"                    
-    BorderThickness="2"
-    Opacity="0.95">
+                BorderThickness="2"
+                Opacity="0.95">
 
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -98,9 +98,9 @@ AllowsTransparency="True">
                        FontFamily="Montserrat"
                        HorizontalAlignment="Center"/>
 
-                    <TextBlock Text="cv inpirational"
+                    <TextBlock Text="Învățarea chimiei simplificată!"
                        Foreground="LightGray"
-                       FontSize="12"
+                       FontSize="16"
                        FontWeight="Medium"
                        FontFamily="Montserrat"
                        TextWrapping="Wrap"
@@ -213,7 +213,8 @@ AllowsTransparency="True">
 
                     <Button x:Name="signUpBtn"                          
                     BorderThickness="0"
-                    Content="Înregistrează-te"
+                    Content="CREEAZĂ CONT"
+                            FontWeight="Bold"
                     Foreground="White"
                     FontSize="12"
                     FontFamily="Montserrat"

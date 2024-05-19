@@ -44,16 +44,13 @@ namespace Chemify
             else
             {
                 MessageBox.Show("Date incorecte!");
-               
             }
-
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            signIn signIn = new signIn();
-            signIn.Close();
-            //Visibility = Visibility.Visible;
+            Application.Current.MainWindow.Show();
+            this.Close();
         }
         public bool UserExist(string email, string password)
         {
