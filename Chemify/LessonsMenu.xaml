@@ -63,7 +63,7 @@
                              FontSize="15"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
-                             Command="{Binding PeriodicTableViewCommand}"/>
+                             Command="{Binding ChemBotViewCommand}"/>
 
                 <Border BorderBrush="White" BorderThickness="0,0,0,1">
                     <TextBlock Text="Lecții"
@@ -91,6 +91,12 @@
                              FontSize="13"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding InvelisulDeElectroniCommand}"/>
+
+                <RadioButton Content="Invelisul - Quiz"
+                             Height="50"
+                             Foreground="White"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding Quiz2ViewCommand}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
