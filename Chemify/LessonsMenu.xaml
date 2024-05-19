@@ -90,7 +90,7 @@
                              Foreground="White"
                              FontSize="13"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding AtomulViewCommand}"/>
+                             Command="{Binding InvelisulDeElectroniCommand}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"

@@ -9,16 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Logo.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="UserData.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Images\" />
     <Folder Include="MVVM\Model\" />
   </ItemGroup>
 
@@ -27,7 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Logo.png" />
+    <Compile Update="MVVM\View\InvelisQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
