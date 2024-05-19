@@ -48,9 +48,13 @@ namespace Chemify.MVVM.View
             {
                 qnb++;
                 senderButton.Background = Brushes.DarkRed;
+                foreach (var x in myCanvas.Children.OfType<Button>())
+                {
+                    if (x.Tag.ToString() == "1") x.Background = Brushes.DarkGreen;
+                }
             }
             ScoreText.Content = "Raspunsuri corecte" + score + "/" + questionNumbers.Count;
-            NextQuestion();
+            
         }
 
         private void RestartGame()
@@ -79,9 +83,11 @@ namespace Chemify.MVVM.View
                 case 1:
 
                     txtQuestion.Text = "Care este diferența principală între hidracizi și oxiacizi?";
-                    ans1.Content = "Hidracizii conțin un nemetal, în timp ce oxiacizii conțin un nemetal și oxigen.";
+                    
+                    ans1.Content = new TextBlock { Inlines = { "Hidracizii conțin un nemetal, în timp ce", new LineBreak(), "oxiacizii conțin un nemetal și oxigen." } };
                     ans2.Content = "Hidracizii sunt acizi slabi, în timp ce oxiacizii sunt acizi tari.";
-                    ans3.Content = "Hidracizii sunt utilizați în industria alimentară, în timp ce oxiacizii sunt utilizați în industria chimică.";
+                    
+                    ans3.Content = new TextBlock { Inlines = { "Hidracizii sunt utilizați în industria alimentară, în timp ce oxiacizii sunt", new LineBreak(), "utilizați în industria chimică." } };
                     ans1.Tag = "1";
                    
 
@@ -135,6 +141,11 @@ namespace Chemify.MVVM.View
             var randomList=questionNumbers.OrderBy(a=>Guid.NewGuid()).ToList();
             questionNumbers = randomList;
             
+        }
+
+        private void nextQuestion(object sender, RoutedEventArgs e)
+        {
+            NextQuestion();
         }
     }
 }

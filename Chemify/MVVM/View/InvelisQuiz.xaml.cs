@@ -48,9 +48,13 @@ namespace Chemify.MVVM.View
             {
                 qnb++;
                 senderButton.Background = Brushes.DarkRed;
+                foreach (var x in myCanvas.Children.OfType<Button>())
+                {
+                    if (x.Tag.ToString() == "1") x.Background = Brushes.DarkGreen;
+                }
             }
             ScoreText.Content = "Raspunsuri corecte" + score + "/" + questionNumbers.Count;
-            NextQuestion();
+            
         }
 
         private void RestartGame()
@@ -134,6 +138,11 @@ namespace Chemify.MVVM.View
             var randomList=questionNumbers.OrderBy(a=>Guid.NewGuid()).ToList();
             questionNumbers = randomList;
             
+        }
+
+        private void nextQuestion(object sender, RoutedEventArgs e)
+        {
+            NextQuestion();
         }
     }
 }

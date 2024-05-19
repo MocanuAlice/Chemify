@@ -48,9 +48,13 @@ namespace Chemify.MVVM.View
             {
                 qnb++;
                 senderButton.Background = Brushes.DarkRed;
+                foreach (var x in myCanvas.Children.OfType<Button>())
+                {
+                    if(x.Tag.ToString()=="1") x.Background=Brushes.DarkGreen;
+                }
             }
             ScoreText.Content = "Raspunsuri corecte" + score + "/" + questionNumbers.Count;
-            NextQuestion();
+            
         }
 
         private void RestartGame()
@@ -73,14 +77,16 @@ namespace Chemify.MVVM.View
                 x.Tag = "0";
                 x.Background = Brushes.MintCream;
             }
-            
-            switch(i)
+
+            switch (i)
             {
                 case 1:
 
                     txtQuestion.Text = "Ce este un atom?";
-                    ans1.Content = "Cea mai mică particulă dintr-o substanță care poate fi divizată prin procedee chimice obișnuite.";
-                    ans2.Content = "Cea mai mică particulă dintr-o substanță care nu mai poate fi divizată prin procedee chimice obișnuite.";
+                    
+                    ans1.Content = new TextBlock { Inlines = { "Cea mai mică particulă dintr-o substanță care poate fi divizată prin", new LineBreak(), "procedee chimice obișnuite." } };
+                    ans2.Content = new TextBlock { Inlines = { "Cea mai mică particulă dintr-o substanță care nu mai poate fi divizată prin", new LineBreak(), "procedee chimice obișnuite." } };
+                    
                     ans3.Content = "O particulă subatomică ce conține protoni și neutroni.";
                     ans2.Tag = "1";
 
@@ -91,7 +97,8 @@ namespace Chemify.MVVM.View
                     txtQuestion.Text = "Ce reprezintă numărul atomic (Z) al unui atom?";
                     ans1.Content = "Numărul total de protoni și neutroni din nucleu.";
                     ans2.Content = "Numărul de neutroni din nucleu.";
-                    ans3.Content = "Numărul de protoni din nucleu și numărul de electroni din învelișul electronic.";
+                    
+                    ans3.Content = new TextBlock { Inlines = { "Numărul de protoni din nucleu și numărul de electroni", new LineBreak(), "din învelișul electronic." } };
                     ans3.Tag = "1";
 
                     break;
@@ -101,7 +108,7 @@ namespace Chemify.MVVM.View
                     txtQuestion.Text = "Ce indică numărul de masă (A) al unui atom?";
                     ans1.Content = "Numărul de protoni din nucleu.";
                     ans2.Content = "Numărul de electroni din învelișul electronic.";
-                    ans3.Content = "Suma dintre numărul de protoni și numărul de neutroni din nucleu.";
+                    ans3.Content = new TextBlock { Inlines = { "Suma dintre numărul de protoni și numărul", new LineBreak(), "de neutroni din nucleu." } };
                     ans3.Tag = "1";
 
                     break;
@@ -134,6 +141,11 @@ namespace Chemify.MVVM.View
             var randomList=questionNumbers.OrderBy(a=>Guid.NewGuid()).ToList();
             questionNumbers = randomList;
             
+        }
+
+        private void nextQuestion(object sender, RoutedEventArgs e)
+        {
+            NextQuestion();
         }
     }
 }

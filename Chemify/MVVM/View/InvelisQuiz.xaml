@@ -16,6 +16,10 @@
         <Button Background="MintCream" FontSize="18" FontWeight="Bold" Click="checkAnswer" Name="ans1" Width="636" Height="90" Content="Answer1" Tag="0" Canvas.Left="82" Canvas.Top="156" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Button Background="MintCream" FontSize="18" FontWeight="Bold" Click="checkAnswer" Name="ans2" Width="636" Height="90" Content="Answer2" Tag="0" Canvas.Left="82" Canvas.Top="276" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Button Background="MintCream" FontSize="18" FontWeight="Bold" Click="checkAnswer" Name="ans3" Width="636" Height="90" Content="Answer3" Tag="0" Canvas.Left="82" Canvas.Top="394" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Background="MintCream" FontSize="18" FontWeight="Bold" Click="nextQuestion" Name="next" Content="NEXT" RenderTransformOrigin="1.852,4.049" Canvas.Left="667" Canvas.Top="500">
+            
+        </Button>
+
 
 
 

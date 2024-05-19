@@ -119,6 +119,19 @@
                              Foreground="White"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding Quiz3ViewCommand}"/>
+                <RadioButton Content="Soluții – generalități"
+                             Height="50"
+                             Foreground="DimGray"
+                             Style="{StaticResource MenuButtonTheme}"
+                             />
+                <RadioButton Content="Dizolvarea"
+                             Height="50"
+                             Foreground="DimGray"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Dizolvarea-Quiz"
+                             Height="50"
+                             Foreground="DimGray"
+                             Style="{StaticResource MenuButtonTheme}"/>
                 <RadioButton Content="Închide Aplicația"
                              Height="50"
                              Foreground="White"
