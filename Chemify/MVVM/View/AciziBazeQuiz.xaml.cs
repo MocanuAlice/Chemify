@@ -18,14 +18,14 @@ namespace Chemify.MVVM.View
     /// <summary>
     /// Interaction logic for TPQuiz.xaml
     /// </summary>
-    public partial class InvelisQuiz : UserControl
+    public partial class AciziBazeQuiz : UserControl
     {
         List<int> questionNumbers = new List<int> { 1, 2, 3, 4, 5 };
         int qnb = 0;
         int i;
         int score;
 
-        public InvelisQuiz()
+        public AciziBazeQuiz()
         {
             InitializeComponent();
             StartGame();
@@ -78,51 +78,52 @@ namespace Chemify.MVVM.View
             {
                 case 1:
 
-                    txtQuestion.Text = "Ce reprezintă învelișul de electroni?";
-                    ans1.Content = "Totalitatea protonilor din nucleul atomului.";
-                    ans2.Content = "Totalitatea electronilor care gravitează în jurul nucleului.";
-                    ans3.Content = "Totalitatea neutronilor din atom.";
-                    ans2.Tag = "1";
+                    txtQuestion.Text = "Care este diferența principală între hidracizi și oxiacizi?";
+                    ans1.Content = "Hidracizii conțin un nemetal, în timp ce oxiacizii conțin un nemetal și oxigen.";
+                    ans2.Content = "Hidracizii sunt acizi slabi, în timp ce oxiacizii sunt acizi tari.";
+                    ans3.Content = "Hidracizii sunt utilizați în industria alimentară, în timp ce oxiacizii sunt utilizați în industria chimică.";
+                    ans1.Tag = "1";
+                   
 
                     break;
 
                 case 2:
 
-                    txtQuestion.Text = "Cum sunt organizați electronii în învelișul de electroni?";
-                    ans1.Content = "Aleatoriu, fără o ordine specifică.";
-                    ans2.Content = "Pe straturi, substrauri și orbitali.";
-                    ans3.Content = "Doar pe straturi.";
-                    ans2.Tag = "1";
+                    txtQuestion.Text = "Care dintre următoarele substanțe este un exemplu de hidracizi?";
+                    ans1.Content = "H2SO4";
+                    ans2.Content = "Ca(OH)2";
+                    ans3.Content = "HCl";
+                    ans3.Tag = "1";
 
                     break;
 
                 case 3:
 
-                    txtQuestion.Text = "Care sunt caracteristicile orbitalului de tip s?";
-                    ans1.Content = "Are o formă sferică și există câte unul în fiecare substrat.";
-                    ans2.Content = "Are o formă dublu-lobată și există câte trei în fiecare substrat.";
-                    ans3.Content = "Are o formă complexă și există câte cinci în fiecare substrat.";
-                    ans1.Tag = "1";
+                    txtQuestion.Text = "Ce substanță chimică este cunoscută sub numele de \"sodă caustică\"?";
+                    ans1.Content = "H₂SO₄";
+                    ans2.Content = "NaOH";
+                    ans3.Content = "HNO₃";
+                    ans2.Tag = "1";
 
                     break;
 
                 case 4:
 
-                    txtQuestion.Text = "Câți electroni poate găzdui un orbital de tip p?";
-                    ans1.Content = "2 electroni";
-                    ans2.Content = "6 electroni";
-                    ans3.Content = "10 electroni";
-                    ans2.Tag = "1";
+                    txtQuestion.Text = "Care dintre următoarele nu este o utilizare a hidroxidului de sodiu?";
+                    ans1.Content = "Sinteza explozivilor";
+                    ans2.Content = "Mercerizarea bumbacului";
+                    ans3.Content = "Obținerea săpunului și a detergenților";
+                    ans1.Tag = "1";
 
                     break;
 
                 case 5:
 
-                    txtQuestion.Text = "Care sunt caracteristicile orbitalilor de tip f?";
-                    ans1.Content = "Au forme sferice și există câte unu în fiecare substrat.";
-                    ans2.Content = "Au forme complexe și sunt câte 7 în fiecare substrat.";
-                    ans3.Content = "Au forme complexe și sunt câte 3 în fiecare substrat.";
-                    ans2.Tag = "1";
+                    txtQuestion.Text = "Care dintre următoarele afirmații este adevărată despre acizi tari?";
+                    ans1.Content = "Cedează protoni foarte greu";
+                    ans2.Content = "Sunt parțial ionizați în soluție apoasă";
+                    ans3.Content = "Cedează protoni foarte ușor";
+                    ans3.Tag = "1";
 
                     break;
             }

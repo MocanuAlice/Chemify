@@ -72,7 +72,6 @@
                                FontSize="18"/>
                 </Border>
 
-
                 <RadioButton Content="Atomul"
                              Height="50"
                              Foreground="White"
@@ -92,11 +91,23 @@
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding InvelisulDeElectroniViewCommand}"/>
 
-                <RadioButton Content="Invelisul - Quiz"
+                <RadioButton Content="Învelișul - Quiz"
                              Height="50"
                              Foreground="White"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding Quiz2ViewCommand}"/>
+
+                <RadioButton Content="Acizi și baze"
+                             Height="50"
+                             Foreground="White"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AciziBazeViewCommand}"/>
+
+                <RadioButton Content="Acizi și baze - Quiz"
+                             Height="50"
+                             Foreground="White"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding Quiz3ViewCommand}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"

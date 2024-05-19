@@ -15,11 +15,17 @@ namespace Chemify.MVVM.ViewModel
         public RelayCommand Quiz1ViewCommand { get; set; }
         public RelayCommand InvelisulDeElectroniViewCommand { get; set; }
         public RelayCommand Quiz2ViewCommand { get; set; }
+        public RelayCommand AciziBazeViewCommand { get; set; }
+        public RelayCommand Quiz3ViewCommand { get; set; }
+
         public ChemBotViewModel chembotVM { get; set; }
         public Lectia1ViewModel lectia1VM{ get; set; }
         public Quiz1ViewModel quiz1VM { get; set; }
         public InvelisulDeElectroniViewModel invelisVM { get; set; }
         public Quiz2ViewModel quiz2VM { get; set; }
+        public AciziSiBAzeViewModel acizibazeVM { get; set; }
+        public Quiz3ViewModel quiz3VM { get; set; }
+
 
         private object _currentView;
         public object CurrentView
@@ -38,6 +44,9 @@ namespace Chemify.MVVM.ViewModel
             quiz1VM = new Quiz1ViewModel();
             quiz2VM = new Quiz2ViewModel();
             invelisVM= new InvelisulDeElectroniViewModel();
+            acizibazeVM = new AciziSiBAzeViewModel();
+            quiz3VM = new Quiz3ViewModel();
+
 
             CurrentView = chembotVM;
 
@@ -60,6 +69,14 @@ namespace Chemify.MVVM.ViewModel
             Quiz2ViewCommand = new RelayCommand(o =>
             {
                 CurrentView = quiz2VM;
+            });
+            AciziBazeViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = acizibazeVM;
+            });
+            Quiz3ViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = quiz3VM;
             });
         }
     }

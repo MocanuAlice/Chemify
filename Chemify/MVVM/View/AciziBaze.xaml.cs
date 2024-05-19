@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Chemify.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for TabelPeriodic.xaml
+    /// Interaction logic for AciziBaze.xaml
     /// </summary>
-    public partial class TabelPeriodic : UserControl
+    public partial class AciziBaze : UserControl
     {
-        public TabelPeriodic()
+        public AciziBaze()
         {
             InitializeComponent();
         }

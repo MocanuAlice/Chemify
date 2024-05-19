@@ -30,6 +30,14 @@
             <DataTemplate DataType="{x:Type viewModel:Quiz2ViewModel}">
                 <view:InvelisQuiz/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AciziSiBAzeViewModel}">
+                <view:AciziBaze/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:Quiz3ViewModel}">
+                <view:AciziBazeQuiz/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
