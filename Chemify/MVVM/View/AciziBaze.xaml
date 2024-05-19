@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Chemify.MVVM.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" FontSize="24" Height="1062" FontWeight="SemiBold">
+             mc:Ignorable="d" d:DesignWidth="800" FontSize="24" Height="1300" FontWeight="SemiBold">
     <StackPanel Margin="20,0,0,0">
 
         <TextBlock Text="Acizi"
@@ -23,7 +22,7 @@
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="  Atomul este cea mai mică particulă dintr-o substanță care nu mai poate fi divizat prin procedee chimice obișnuite."
+                        <TextBlock Text="  Substanțele compuse numite acizi conțin hidrogen și radical acid (nemetal sau grupare de nemetal cu oxigenul)."
                                TextWrapping="Wrap"
                                Margin="10,15,20,0"/>
                     </StackPanel>
@@ -33,23 +32,23 @@
 
         <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
             <Border Width="700"
-                Height="240"
+                Height="235"
                 Background="CadetBlue">
                 <Border.Clip>
-                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,240"/>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,235"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Structura atomului:"
+                        <TextBlock Text="Calsificarea acizilor:"
                                FontWeight="Bold"
                                TextWrapping="Wrap"
                                Margin="10,10,20,0"/>
 
-                        <TextBlock Text="     1) nucleu - partea centrală,care conține două tipuri de particule: protoni( p⁺) - particule cu sarcina pozitivă și neutroni (n⁰) - particule fără sarcina electrică. "
+                        <TextBlock Text="     1) Hidracizii sunt acizii formați din hidrogen și un nemetal. Ex. acid clorhidric : HCl."
                                TextWrapping="Wrap"
                                Margin="10,10,10,0"/>
 
-                        <TextBlock Text="     2) înveliș electronic-partea externă a atomului, care conține particule numite electroni(e⁻) - particule cu sarcină negativă. "
+                        <TextBlock Text="     2) Oxiacizii sunt acizii formați din hidrogen și un radical acid (care conține un nemetal și oxigen). Ex. Acid sulfuric: H₂SO₄."
                                TextWrapping="Wrap"
                                Margin="10,10,10,0"/>
                     </StackPanel>
@@ -59,34 +58,64 @@
 
         <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
             <Border Width="700"
-                Height="335"
+                Height="375"
                 Background="CadetBlue">
                 <Border.Clip>
-                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,335"/>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,375"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Numărul atomic Z și numărul de masă A"
-                               FontWeight="Bold"
+                        <TextBlock Text="    Cei mai utilizați acizi anorganici sunt acidul clorhidric, acidul sulfuric și acidul azotic."
                                TextWrapping="Wrap"
                                Margin="10,10,20,0"/>
 
-                        <TextBlock Text="    Un atom este caracterizat prin două numere:"
+                        <TextBlock Text="    Acidul clorhidric este prezent în stomacul oamenilor pentru a ajuta la digestia alimentelor."
                                TextWrapping="Wrap"
                                Margin="10,10,20,0"/>
 
-                        <TextBlock Text="    1) numărul atomic, notat cu Z care indică: numărul de protoni p+(sarcini pozitive) din nucleu; numărul de electroni e-(sarcini negative) din invelișul electronic ; numărul de ordine în Sistemul Periodic ( căsuța din sistemul periodic) "
+                        <TextBlock Text="    - HCl este folosit la: obținerea PVC-ului, sinteza unor solvenți, reactiv de laborator etc."
                                TextWrapping="Wrap"
                                Margin="10,10,20,0"/>
 
-                        <TextBlock Text="    2) numărul de masă, notat cu A, care arată suma dintre numărul de protoni și numărul de neutroni din nucleu. Este un număr întreg (natural)."
+                        <TextBlock Text="    - H₂SO₄ este folosit la: obținerea detergenților, obținerea îngrășămintelor etc."
                                TextWrapping="Wrap"
                                Margin="10,10,20,0"/>
 
-                        <TextBlock Text="A = Z+N, N = numărul de neutroni"
+                        <TextBlock Text="    - HNO₃ este folosit la: obținerea lacurilor și coloranților, sinteza explozivilor etc."
                                TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Margin="10,20,20,0"/>
+                               Margin="10,10,20,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <TextBlock Text="Baze"
+       FontWeight="DemiBold"
+       Foreground="White"
+       FontSize="36"
+       HorizontalAlignment="left"
+                   Margin="0,10,0,0"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Width="700"
+        Height="155"
+        Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,155"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="  Bazele (hidroxizii) sunt substanțe compuse dintr-un ion metalic și una sau mai multe grupări hidroxid (OH)."
+                       TextWrapping="Wrap"
+                       Margin="10,15,20,5"/>
+
+                        <TextBlock Text="Formula generală: M(OH)n,"
+           TextWrapping="Wrap"
+           TextAlignment="Center"/>
+
+                        <TextBlock Text="unde M=metal și n=valența metalului"
+TextWrapping="Wrap"
+TextAlignment="Center"/>
                     </StackPanel>
                 </Grid>
             </Border>
@@ -94,35 +123,20 @@
 
         <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
             <Border Width="700"
-                Height="265"
-                Background="CadetBlue">
+        Height="250"
+        Background="CadetBlue">
                 <Border.Clip>
-                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,265"/>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,250"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Izotopii"
-                               FontWeight="Bold"
-                               TextWrapping="Wrap"
-                               Margin="10,10,10,0"/>
+                        <TextBlock Text="    Cea mai cunoscută bază este hidroxidul de sodiu (soda caustică), cu formula NaOH și care este utilizată la producerea: săpunului și detergenților sintetici, fibrelor textile artificiale, coloranților etc."
+                       TextWrapping="Wrap"
+                       Margin="10,10,20,0"/>
 
-                        <TextBlock Text="   Izotopii – sunt specii atomice ce au același număr atomic Z dar au numărul de masă A diferit (au numărul diferit de neutroni)."
-                               TextWrapping="Wrap"
-                               Margin="10,10,10,0"
-                               FontWeight="SemiBold"/>
-
-                        <TextBlock Text="Hidrogenul are 3 izotopi: ¹H, ²H, ³H."
-                               TextAlignment="Center"
-                               TextWrapping="Wrap"
-                               Margin="0,10,0,0"/>
-
-                        <TextBlock Text="Oxigenul are 3 izotopi: ¹⁶O,¹⁷O,¹⁸O"
-                               TextWrapping="Wrap"
-                               TextAlignment="Center"/>
-
-                        <TextBlock Text="Clorul are 2 izotopi : ³⁵Cl ³⁷Cl."
-                               TextWrapping="Wrap"
-                               TextAlignment="Center"/>
+                        <TextBlock Text="    Hidroxidul de calciu (varul stins), cu formula Ca(OH)₂ este folosit: în construcții (la obținerea mortarului, la văruire), ca fertilizator etc."
+TextWrapping="Wrap"
+Margin="10,10,20,0"/>
                     </StackPanel>
                 </Grid>
             </Border>
