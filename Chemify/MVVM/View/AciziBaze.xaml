@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Chemify.MVVM.View"
-             mc:Ignorable="d" d:DesignWidth="800" FontSize="24" Height="1300" FontWeight="SemiBold">
+             mc:Ignorable="d" d:DesignWidth="800" FontSize="24" Height="1771" FontWeight="SemiBold">
     <StackPanel Margin="20,0,0,0">
 
         <TextBlock Text="Acizi"
@@ -89,6 +89,59 @@
             </Border>
         </StackPanel>
 
+        <TextBlock Text="Acizi tari și acizi slabi"
+   FontWeight="DemiBold"
+   Foreground="White"
+   FontSize="36"
+   HorizontalAlignment="left"
+               Margin="0,10,0,0"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Width="700"
+        Height="215"
+        Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,215"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="    Ușurința acizilor de a ceda protoni în soluții este diferită și, astfel, soluțiile de acizi au caracter acid diferit."
+                       TextWrapping="Wrap"
+                       Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    Acizii tari cedează foarte ușor protoni, fiind total (aproape total) ionizați în soluție apoasă."
+                       TextWrapping="Wrap"
+                       Margin="10,5,10,0"/>
+
+                        <TextBlock Text="    Sunt considerați acizi tari: HClO4, HI, HCl, H2SO4 , HNO3 etc."
+TextWrapping="Wrap"
+Margin="10,5,10,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Width="700"
+Height="185"
+Background="CadetBlue" Margin="0,20,0,0">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,185"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="    Acizii slabi cedează greu protoni, fiind parțial (puțin) ionizați în soluție apoasă."
+               TextWrapping="Wrap"
+               Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    Sunt considerați acizi slabi: H2S (acid sulhidric din emanațiile vulcanice), H3PO4 (acid fosforic din coca-cola), C6H8O7 (acid citric din sucul de citrice) etc."
+               TextWrapping="Wrap"
+               Margin="10,5,10,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
         <TextBlock Text="Baze"
        FontWeight="DemiBold"
        Foreground="White"
@@ -137,6 +190,55 @@ TextAlignment="Center"/>
                         <TextBlock Text="    Hidroxidul de calciu (varul stins), cu formula Ca(OH)₂ este folosit: în construcții (la obținerea mortarului, la văruire), ca fertilizator etc."
 TextWrapping="Wrap"
 Margin="10,10,20,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <TextBlock Text="Baze tari și baze slabe"
+       FontWeight="DemiBold"
+       Foreground="White"
+       FontSize="36"
+       HorizontalAlignment="left"
+                   Margin="0,10,0,0"/>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Width="700"
+            Height="185"
+            Background="CadetBlue">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,185"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="    Bazele tari acceptă foarte ușor protoni, fiind total (aproape total) ionizate (disociate) în soluție apoasă."
+                           TextWrapping="Wrap"
+                           Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    Baze tari sunt hidroxizii metalelor alcaline: LiOH, NaOH, KOH, RbOH, CsOH și hidroxizii unor metale alcalino-pământoase: Ca(OH)2, Sr(OH)2, Ba(OH)2."
+                           TextWrapping="Wrap"
+                           Margin="10,5,10,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Width="700"
+    Height="215"
+    Background="CadetBlue" Margin="0,20,0,0">
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,700,215"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="    Bazele slabe nu conțin gruparea hidroxil în structura lor, ele acceptă un proton de la o moleculă de apă, lăsând astfel în urmă un ion hidroxil."
+                   TextWrapping="Wrap"
+                   Margin="10,10,20,0"/>
+
+                        <TextBlock Text="    Bazele slabe nu formează foarte mulți ioni la dizolvarea în apă, iar valoarea constantei de bazicitate este, în general, foarte mică."
+                   TextWrapping="Wrap"
+                   Margin="10,5,10,0"/>
                     </StackPanel>
                 </Grid>
             </Border>
