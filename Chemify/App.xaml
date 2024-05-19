@@ -24,7 +24,7 @@
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:InvelisulDeElectroniViewModel}">
-                <view:Înveli_ulDeElectroni/>
+                <view:InvelisulDeElectroni/>
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:Quiz2ViewModel}">

@@ -90,7 +90,7 @@
                              Foreground="White"
                              FontSize="13"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding InvelisulDeElectroniCommand}"/>
+                             Command="{Binding InvelisulDeElectroniViewCommand}"/>
 
                 <RadioButton Content="Invelisul - Quiz"
                              Height="50"
@@ -104,6 +104,7 @@
                             Margin="10"
                             Content="{Binding CurrentView}">
             </ContentControl>
+            
         </Grid>
     </Border>
 </Window>

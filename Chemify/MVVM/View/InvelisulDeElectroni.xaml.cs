@@ -18,9 +18,9 @@ namespace Chemify.MVVM.View
     /// <summary>
     /// Interaction logic for Înveli_ulDeElectroni.xaml
     /// </summary>
-    public partial class Înveli_ulDeElectroni : UserControl
+    public partial class InvelisulDeElectroni : UserControl
     {
-        public Înveli_ulDeElectroni()
+        public InvelisulDeElectroni()
         {
             InitializeComponent();
         }

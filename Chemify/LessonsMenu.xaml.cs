@@ -1,4 +1,4 @@
-﻿using Chemify.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace Chemify
     /// </summary>
     public partial class LessonsMenu : Window
     {
-        public UserModel user;
+        
         public LessonsMenu()
         {
             InitializeComponent();

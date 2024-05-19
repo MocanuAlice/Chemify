@@ -71,7 +71,7 @@ namespace Chemify.MVVM.View
             foreach(var x in myCanvas.Children.OfType<Button>())
             {
                 x.Tag = "0";
-                x.Background = Brushes.Bisque;
+                x.Background = Brushes.MintCream;
             }
             
             switch(i)
