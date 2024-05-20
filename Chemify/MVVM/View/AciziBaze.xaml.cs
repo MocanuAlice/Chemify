@@ -1,4 +1,8 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -9,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Chemify
+namespace Chemify.MVVM.View
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for AciziBaze.xaml
+    /// </summary>
+    public partial class AciziBaze : UserControl
     {
-        public MainWindow()
+        public AciziBaze()
         {
             InitializeComponent();
-        }
-
-        private void signUpBtn_Click(object sender, RoutedEventArgs e)
-        {
-            LessonsMenu window = new LessonsMenu();
-            window.Show();
-            this.Hide();
         }
     }
 }

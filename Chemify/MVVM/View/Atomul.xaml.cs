@@ -10,28 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Chemify
+namespace Chemify.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for signUp.xaml
+    /// Interaction logic for Atomul.xaml
     /// </summary>
-    public partial class signUp : Window
+    public partial class Atomul : UserControl
     {
-        public signUp()
+        public Atomul()
         {
             InitializeComponent();
         }
 
-        private void signUpBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnClose_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }

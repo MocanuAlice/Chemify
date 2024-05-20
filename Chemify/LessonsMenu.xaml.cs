@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,25 +15,16 @@ using System.Windows.Shapes;
 
 namespace Chemify
 {
-    /// <summary>
-    /// Interaction logic for signIn.xaml
-    /// </summary>
-    public partial class signIn : Window
+    public partial class LessonsMenu : Window
     {
-        public signIn()
+        public LessonsMenu()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
-
-        private void btnClose_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            //Visibility = Visibility.Visible;
-        }
-    }
+    }    
 }

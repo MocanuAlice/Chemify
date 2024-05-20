@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Chemify": {
+      "commandName": "Project",
+      "sqlDebugging": false
+    }
+  }
+}

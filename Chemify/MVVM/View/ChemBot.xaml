@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Chemify.MVVM.View.ChemBot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chemify.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                   Text="ChemBot" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="10" 
+                   Foreground="LightBlue"/>
+        <TextBlock Grid.Row="0" Text="Întreabă-mă orice despre chimie!" FontSize="16" 
+                   HorizontalAlignment="Center" 
+                   Margin="40,40,40,10" 
+                   Foreground="LightBlue"/>
+        <ListBox x:Name="ChatHistory" 
+                 Grid.Row="1" Margin="10" 
+                 Background="Azure" 
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    Margin="10" 
+                    HorizontalAlignment="Center">
+            <TextBox x:Name="UserInput" 
+                     Width="300" Height="30" Margin="0,0,10,0"/>
+            <Button x:Name="SendButton" 
+                    Content="Enter" 
+                    FontWeight="SemiBold" 
+                    Width="100" 
+                    Click="SendButton_Click" 
+                    Background="LightBlue" 
+                    Foreground="#1B1448"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
