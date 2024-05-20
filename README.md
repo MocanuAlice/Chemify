@@ -1,0 +1,1 @@
+Chemify este o aplicație software modelată conform tendințelor tehnologice actuale, proiectată pentru a facilita o înțelegere aprofundată și detaliată a chimiei. Această program îmbină armonios metodele pedagogice tradiționale cu inovațiile tehnologice contemporane, creând astfel o experiență educațională completă și eficientă.
